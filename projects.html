@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2><span>Kandikonda</span> Vinay Goud</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</nav>
+
+<section class="projects">
+  <h1 class="title">My Projects</h1>
+
+  <div class="project-container">
+
+    <!-- Project 1 -->
+    <div class="card" onclick="showProject('bus')">
+      <img src="images/bus.png">
+      <h3>Real-Time College Bus Tracking System</h3>
+      <p>Click here to view details</p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card" onclick="showProject('portfolio')">
+      <img src="images/portfolio.jpg">
+      <h3>Portfolio Website</h3>
+      <p>Click here to view details</p>
+    </div>
+
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" class="dashboard">
+    <h2 id="projectTitle"></h2>
+    <img id="projectImage">
+    <p id="projectDesc"></p>
+
+    <div class="buttons">
+      <a id="githubLink" target="_blank" class="btn">GitHub</a>
+      <button onclick="closeDashboard()" class="btn-outline">Close</button>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
