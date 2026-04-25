@@ -18,7 +18,7 @@ function showProject(project) {
     document.getElementById("projectDesc").innerText =
       "A responsive personal portfolio built using HTML, CSS, JS.";
     document.getElementById("githubLink").href =
-      "https://github.com/yourusername/portfolio";
+      "https://github.com/VINAYGOUD5418/Portfolio";
   }
 
   dashboard.style.display = "block";
