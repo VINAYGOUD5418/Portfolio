@@ -215,7 +215,7 @@ nav a {
   border: 1px solid #ff0055;
   padding: 8px 15px;
   border-radius: 20px;
-  color: white;
+  color: #ff0055;
   margin-left: 10px;
 }
 .about-content a {
@@ -225,4 +225,71 @@ nav a {
 
 .about-content a:hover {
   text-decoration: underline;
+}
+.intro {
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 0;
+}
+
+/* Name animation */
+.name {
+  font-size: 48px;
+  opacity: 0;
+}
+
+/* Fade Up Animation */
+.fade-up {
+  animation: fadeUp 1s ease forwards;
+}
+
+.delay {
+  animation-delay: 0.5s;
+}
+
+.delay2 {
+  animation-delay: 1s;
+}
+
+/* Slide Left Animation */
+.slide-left {
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.gradient-text {
+  font-size: 28px;
+  background: linear-gradient(90deg, #ff0055, #7b2ff7, #00c6ff);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 4s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
 }
